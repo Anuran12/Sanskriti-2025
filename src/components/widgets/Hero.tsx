@@ -141,7 +141,7 @@ export const Header = () => {
       >
         redefining culture...
       </motion.h2>
-      <ShiftingCountdown targetDate="05/09/2024" />
+      <ShiftingCountdown targetDate="04/05/2025" />
     </>
   );
 };

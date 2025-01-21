@@ -26,23 +26,27 @@ function processEvents(
   setEvents: React.Dispatch<React.SetStateAction<Event[]>>
 ) {
   const eventsData: Event[] = [];
-  const categoryEvents: Events = categoriesList[category].events[0]; // Assuming you only want the first array of events
 
-  Object.keys(categoryEvents).forEach((key) => {
-    const event = categoryEvents[key];
-    eventsData.push({
-      name: event.name,
-      key: key,
-      amount: event.costs,
-      team: event.team,
+  // Check if category exists and has events
+  if (categoriesList[category]?.events?.length > 0) {
+    const categoryEvents: Events = categoriesList[category].events[0];
+
+    Object.keys(categoryEvents).forEach((key) => {
+      const event = categoryEvents[key];
+      eventsData.push({
+        name: event.name,
+        key: key,
+        amount: event.costs,
+        team: event.team,
+      });
     });
-  });
+  }
 
   setEvents(eventsData);
 }
 
 const Register: React.FC = () => {
-  const session = useSession({
+  const { data: session, status } = useSession({
     required: false,
     onUnauthenticated: async () => {
       console.log("User is unauthenticated, redirecting to sign-in...");
@@ -226,7 +230,7 @@ const Register: React.FC = () => {
     return totalSum;
   };
 
-  if (session.data?.user.role !== UserRole.ADMIN) {
+  if (session?.user.role !== UserRole.ADMIN) {
     return <div>Forbidden</div>;
   }
 
@@ -255,7 +259,7 @@ const Register: React.FC = () => {
             id="name"
             aria-label="Name"
             placeholder="Name"
-            value={session.data?.user?.name!}
+            value={session?.user?.name!}
             disabled
           />
           <br />
@@ -265,7 +269,7 @@ const Register: React.FC = () => {
             id="email"
             aria-label="Email"
             placeholder="Email"
-            value={session.data?.user?.email!}
+            value={session?.user?.email!}
             disabled
           />
           <br />

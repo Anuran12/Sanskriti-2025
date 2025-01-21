@@ -5,11 +5,11 @@ import { tiaraFont } from "@/lib/fonts";
 import { cn, tiaraAssetsPrefix } from "@/lib/utils";
 
 const sponsers = [
-  `${tiaraAssetsPrefix}/sponsers/performance1.jpeg`,
-  `${tiaraAssetsPrefix}/sponsers/performance1.jpeg`,
-  `${tiaraAssetsPrefix}/sponsers/performance1.jpeg`,
-  `${tiaraAssetsPrefix}/sponsers/performance1.jpeg`,
-  `${tiaraAssetsPrefix}/sponsers/performance1.jpeg`,
+  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
+  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
+  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
+  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
+  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
 ];
 
 export function Sponsers() {
