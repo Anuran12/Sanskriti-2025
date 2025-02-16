@@ -23,10 +23,6 @@ const navItems: NavItem[] = [
     href: "/events",
   },
   {
-    label: "team",
-    href: "/team",
-  },
-  {
     label: "about",
     href: "/about",
   },
@@ -51,7 +47,8 @@ export function Header() {
                   tiaraFont.className
                 )}
               >
-                Sanskriti
+                Sanskriti{" "}
+                <span className="text-tiara_red text-xl lg:text-3xl">2025</span>
               </h2>
             </Link>
             <div className="md:hidden">
@@ -73,7 +70,7 @@ export function Header() {
             id="navbar-collapse-with-animation"
             className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
           >
-            <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
+            <div className="flex flex-col gap-y-4 gap-x-0 mt-5 text-xl md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               {navItems.map((navItem, i) => (
                 <a
                   key={i}
@@ -86,11 +83,13 @@ export function Header() {
               <Button
                 asChild
                 className={cn(
-                  "tracking-widest flex items-center font-medium md:my-6 bg-tiara_red hover:bg-tiara_red/90 text-white",
+                  "tracking-widest flex items-center font-medium md:my-6 bg-tiara_red hover:bg-tiara_red/90 text-white text-xl",
                   tiaraFont.className
                 )}
               >
-                <Link href={`${tiaraAssetsPrefix}/rulebook.pdf`}>rulebook</Link>
+                <Link href={"./brochure.pdf"} target="_blank">
+                  All Events Brochure
+                </Link>
               </Button>
             </div>
           </div>

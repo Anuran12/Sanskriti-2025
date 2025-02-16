@@ -30,7 +30,7 @@ const ShiftingCountdown = ({ targetDate }: ShiftingCountdownProps) => {
 
   const handleCountdown = () => {
     const end = new Date(targetDate);
-    end.setHours(end.getHours() + 9);
+    end.setHours(end.getHours());
     const now = new Date();
     console.log(now, end);
 

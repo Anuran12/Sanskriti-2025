@@ -16,7 +16,7 @@ function toTitleCase(str: string) {
 export default function EventsPage() {
   const [cards, setCards] = useState<CardType[]>([]);
   const pathname = usePathname();
-  
+
   useEffect(() => {
     const path = pathname.split("/")[2];
     fetch(`/api/events/${path}`)
@@ -46,50 +46,44 @@ export default function EventsPage() {
               if (card.id === "50") {
                 return null;
               }
-              return (
-                
-                
-                (card.id !== "15" && card.id !== "14") ? (
-                    <CardContainer
-                      key={index}
-                      containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
-                    >
-                      <CardBody className="relative">
-                        <CardItem translateZ="100" className="w-full mt-4">
-                          <Image
-                            src={card.thumbnail}
-                            className="rounded-xl"
-                            alt="thumbnail"
-                            width={1200}
-                            height={800}
-                            priority
-                            sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                          />
-                        </CardItem>
-                      </CardBody>
-                    </CardContainer>
-                ) : (
-                  <CardContainer
-                    key={index}
-                    containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
-                  >
-                    <CardBody className="relative">
-                      <CardItem translateZ="100" className="w-full mt-4">
-                        <Image
-                          src={card.thumbnail}
-                          className="rounded-xl"
-                          alt="thumbnail"
-                          width={1200}
-                          height={800}
-                          priority
-                          sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                        />
-                      </CardItem>
-                    </CardBody>
-                  </CardContainer>
-                )
-                
-                
+              return card.id !== "15" && card.id !== "14" ? (
+                <CardContainer
+                  key={index}
+                  containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
+                >
+                  <CardBody className="relative">
+                    <CardItem translateZ="100" className="w-full mt-4">
+                      <Image
+                        src={card.thumbnail}
+                        className="rounded-xl"
+                        alt="thumbnail"
+                        width={1200}
+                        height={800}
+                        priority
+                        sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                      />
+                    </CardItem>
+                  </CardBody>
+                </CardContainer>
+              ) : (
+                <CardContainer
+                  key={index}
+                  containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
+                >
+                  <CardBody className="relative">
+                    <CardItem translateZ="100" className="w-full mt-4">
+                      <Image
+                        src={card.thumbnail}
+                        className="rounded-xl"
+                        alt="thumbnail"
+                        width={1200}
+                        height={800}
+                        priority
+                        sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                      />
+                    </CardItem>
+                  </CardBody>
+                </CardContainer>
               );
             })}
         </div>

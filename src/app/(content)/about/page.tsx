@@ -11,28 +11,38 @@ export default function About() {
           id="about"
           className={cn("text-6xl text-center", tiaraFont.className)}
         >
-          About Ti<span className="text-tiara_red">ar</span>a
+          About Sanskriti
         </h1>
-        <p>
-          St Joseph Engineering College has come together to host a national
-          level techno-cultural fest, Tiara 2024. Tiara is a National-level
-          Techno-Cultural fest, conducted for young minds aspiring to be
-          extraordinary, that is open to all students of undergraduate level and
-          above to come and showcase their talents and represent their
-          respective institutions on the grand stage of Tiara. Our event mainly
-          aims to spread and teach the youth to explore new areas of Technology
-          and Culture to foster the nation{"'"}s development. SJEC welcomes you
-          all to Tiara-2024 To unleash your potential and unlock your skills.
-          See you on 9th, 10th and 11th May 2024.
+        <p className="text-center">
+          The Faculty of Engineering and Technology Students' Union of Jadavpur
+          University is the organizer of the nine-day festival known as
+          Sanskriti. It was initiated in 1978 amidst the political unrest in
+          West Bengal with the intention of introducing pupils to a different
+          kind of culture. <br /> <br /> In this sense, the inaugural
+          "Sanskriti" cultural festival was a landmark event. Although it has
+          changed over the years, its fundamental concept has remained virtually
+          constant. <br /> <br /> Mao Zedong's famous slogan, "let a hundred
+          flowers blossom," was used as the festival's subtitle. And indeed, the
+          event was multifaceted, with everything from Eastern dance to Western
+          folk songs to elocution and much more. <br /> <br /> <br />
         </p>
       </div>
-      <iframe
-        className="px-10"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9520361386985!2d74.89609701022555!3d12.910804316156533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba359dfac132663%3A0xa7bf228838232d32!2sSt%20Joseph%20Engineering%20College!5e0!3m2!1sen!2sin!4v1713257369845!5m2!1sen!2sin"
-        width="100%"
-        height="450"
-        loading="lazy"
-      ></iframe>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <iframe
+          className="px-10"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.49906808482!2d88.4110555753441!3d22.560430279500412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02743203255595%3A0x9c37b30c00660fab!2sJadavpur%20University%2C%20Salt%20Lake%20Campus!5e0!3m2!1sen!2sin!4v1739666931290!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          className="px-10"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.0568377036093!2d88.36873677534238!3d22.502050579541947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02712518403fcf%3A0x6b4d821705dd609d!2sJU%20Open%20Air%20Theatre!5e0!3m2!1sen!2sin!4v1739666762772!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          loading="lazy"
+        ></iframe>
+      </div>
     </Container>
   );
 }

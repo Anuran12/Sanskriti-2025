@@ -7,6 +7,7 @@ import EventsPage from "./events/page";
 import { Sponsers } from "@components/widgets/GoldSponser";
 import RegisterNow from "@/components/ui/registernow";
 import { useSession } from "next-auth/react";
+import Sponsors2 from "@/components/ui/Sponsors2";
 
 const images = [
   { alt: "Image 0", src: `${tiaraAssetsPrefix}/hero/3(1).jpg` },
@@ -38,6 +39,7 @@ export default function Home() {
         <EventsPage />
         <RegisterNow />
         <Sponsers />
+        <Sponsors2 />
       </Lenis>
     </main>
   );
