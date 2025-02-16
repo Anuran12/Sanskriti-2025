@@ -14,17 +14,18 @@ export default function About() {
           About Sanskriti
         </h1>
         <p className="text-center">
-          The Faculty of Engineering and Technology Students' Union of Jadavpur
-          University is the organizer of the nine-day festival known as
+          The Faculty of Engineering and Technology Students&apos; Union of
+          Jadavpur University is the organizer of the nine-day festival known as
           Sanskriti. It was initiated in 1978 amidst the political unrest in
           West Bengal with the intention of introducing pupils to a different
           kind of culture. <br /> <br /> In this sense, the inaugural
-          "Sanskriti" cultural festival was a landmark event. Although it has
-          changed over the years, its fundamental concept has remained virtually
-          constant. <br /> <br /> Mao Zedong's famous slogan, "let a hundred
-          flowers blossom," was used as the festival's subtitle. And indeed, the
-          event was multifaceted, with everything from Eastern dance to Western
-          folk songs to elocution and much more. <br /> <br /> <br />
+          &quot;Sanskriti&quot; cultural festival was a landmark event. Although
+          it has changed over the years, its fundamental concept has remained
+          virtually constant. <br /> <br /> Mao Zedong&apos;s famous slogan,
+          &quot;let a hundred flowers blossom,&quot; was used as the
+          festival&apos;s subtitle. And indeed, the event was multifaceted, with
+          everything from Eastern dance to Western folk songs to elocution and
+          much more. <br /> <br /> <br />
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
