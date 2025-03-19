@@ -39,8 +39,7 @@ export default function EventsPage() {
             heading={category.heading}
             subheading={category.subheading}
             image={category.image}
-            // href={category.href}
-            href="#"
+            href={category.href}
           />
         ))}
       </div>
