@@ -47,6 +47,11 @@ export const baseURL = process.env.NEXT_PUBLIC_URL
 export const tiaraAssetsPrefix =
   "https://raw.githubusercontent.com/Anuran12/Sanskriti-Assets/main";
 
+// Add this line to debug image URLs in the browser console
+if (typeof window !== "undefined") {
+  console.log("Image prefix URL:", tiaraAssetsPrefix);
+}
+
 declare global {
   interface Window {
     Razorpay: any;
