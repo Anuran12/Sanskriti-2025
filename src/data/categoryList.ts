@@ -35,6 +35,7 @@ const categoriesList = {
           startTime: "2024-05-10 09:00:00",
           // endTime: "2024-05-10 11:00:00",
           costs: 250,
+          formLink: "https://forms.gle/YourSpecificEventFormLink", // Add the Google Form link here
           facultyCoordinators: [
             {
               name: "Dr. Robotics Expert",
@@ -500,9 +501,8 @@ const categoriesList = {
     ],
   },
 
-  events_day: {
-    description:
-      "6th & 7th April, 2025. These two days are dedicated to only events to maximize participation. OAT, Jadavpur Campus",
+  prelims: {
+    description: "6th April, 2025. OAT, Jadavpur Campus",
     thumbnail: `${tiaraAssetsPrefix}/nontechnical/nontechnical_thumbnail.avif`,
     events: [
       {
@@ -1124,8 +1124,7 @@ const categoriesList = {
   },
 
   students_performance: {
-    description:
-      "8th April, 2025. A night dedicated to,for and by the students of Jadavpur University. OAT, Jadavpur Campus.",
+    description: "7th April, 2025. OAT, Jadavpur Campus.",
     thumbnail: `${tiaraAssetsPrefix}/cultural/cultural_thumbnail.avif`,
     events: [
       {
@@ -1215,6 +1214,330 @@ const categoriesList = {
   },
 
   dance_night: {
+    description: "8th April,2025.OAT, Jadavpur Campus.",
+    thumbnail: `${tiaraAssetsPrefix}/mega/mega_thumbnail.avif`,
+    events: [
+      {
+        "0": {
+          name: "Tune Tussel (Battle of Bands)",
+          description: "Rocking the stage, one riff at a time!",
+          prerequisites: [],
+          rules: [
+            "Team size: 3-7 members",
+            "Minimum number of members per band - 3 (minimum use of 3 instruments is a must).",
+            "Maximum number of members per band - 7 (Members performing for more than one band will lead to disqualification of all the involved bands)",
+            "Time limit 5+15 (exceeding the time limit will lead to loss of points).",
+            "There is no specific genre for the battle however the overall atmosphere of the music has to be western.",
+            "Slot Picking, ID and age verification wilt be done one day prior to the battle i.e. on the 5th of March 2023. (All the band members need not be present; However, the Band representatives need to have the necessary documents for verification for all the members).",
+            "Audition links to be submitted by May 1st 2024 with all the necessary details of the bands (including brief introduction of the bands with social media links, links to the released music or YouTube covers and the details of band members. Bands failing to do so will not be considered into the battle). The selected Bands will be contacted back. Submission: tiara@sjec.ac.in.",
+            "All the Rules and regulations will be briefed to the band representatives on the day prior to the battle.",
+            "Participants must convey their message concisely and effectively, avoiding unnecessary details and jargon.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/tune_tussel.avif`,
+          startTime: "2024-05-09 15:00",
+          // endTime: "2024-05-10 16:00",
+          facultyCoordinators: [
+            {
+              name: "John Doe",
+              phone: "+1234567890",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Sasha",
+              phone: "9480161867",
+            },
+            {
+              name: "Ajith Rodrigues",
+              phone: "6362070751",
+            },
+            {
+              name: "Sean R Monis",
+              phone: "9448106775",
+            },
+          ],
+        },
+        "1": {
+          name: "Spin the Disc (Battle of DJs)",
+          description: "Mixing beats, igniting souls",
+          prerequisites: [
+            "All contestants must register themselves on the website.",
+          ],
+          rules: [
+            "The SPIN WIZARD is an individual event.",
+            "Time limit: 5 minutes of setup time + 10 minutes of performance time (15 minutes in total).",
+            "The use of any kind of abusive / offensive / pornographic / illegal content is strictly prohibited. Such contest entries will be disqualified immediately.",
+            "Contestants are requested to bring their own headphones and pen drives.",
+            "Use of Controllers is permitted.",
+            "Judge's decision in all matters is final and cannot be appealed or contested.",
+            "Results will be announced right after the competition.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/spin_the_disc.avif`,
+          startTime: "2024-05-09 17:00",
+          // endTime: "2024-05-09 18:00",
+          facultyCoordinators: [
+            {
+              name: "Michael Johnson",
+              phone: "+1122334455",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Melon",
+              phone: "7760316201",
+            },
+            {
+              name: "Havan Kotian",
+              phone: "8951726188",
+            },
+            {
+              name: "Renvil Castelino",
+              phone: "8139979122",
+            },
+          ],
+        },
+        "2": {
+          name: "Groove (Dance Battle)",
+          description: " Step up, shake it off, and own the floor",
+          prerequisites: [
+            "Individual participation.",
+            "Participants must present a physical college ID card and PID to participate in the event.",
+          ],
+          rules: [
+            "All the rounds will be battle and there will be elimination.",
+            "Random songs will be played on the spot.",
+            "Two participants will be called on the stage simultaneously. The first participant dances to a song played on the spot while the other stays still.",
+            "At the signal of the judges, the first participant will stop and the second participant will immediately begin dancing to the continuation of the same song.",
+            "The process will be repeated every time the song is changed. The starting sequence for each song will be performed by participants 1 and 2 alternately.",
+            "Judgement will be based on Creativity, Musicality, Confidence, Entertainment factor, Execution and Expression will be considered.",
+            "Judges and organizer's decisions are final and binding.",
+            "Judges and coordinator may tweak the rules based on the number of participants.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/groove.avif`,
+          startTime: "2024-05-09 10:00",
+          // endTime: "2024-05-12 12:00",
+          facultyCoordinators: [
+            {
+              name: "Michael Johnson",
+              phone: "+1122334455",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Dhanush",
+              phone: "7019811724",
+            },
+            {
+              name: "Rishika",
+              phone: "8624901265",
+            },
+            {
+              name: "Sourabh",
+              phone: "9113962008",
+            },
+          ],
+        },
+        "3": {
+          name: "Heritage Haute (Fashion Show)",
+          description: "Strut with style, own the runway",
+          prerequisites: [
+            "All the participants must be from the same college.",
+            "Participants must present a physical college ID card and PID to participate in the event.",
+          ],
+          rules: [
+            "A team can have a minimum of 8 models to a maximum of 16 models.",
+            "A total of 5 minutes will be allotted purely for the performance, and an additional 2 minutes will be allotted for setting up the stage.",
+            "Use of water, fire or any kind of fireworks (party poppers) will lead to immediate disqualification.",
+            "There are no gender restrictions for the team composition.",
+            "Performance should be based on the theme given.",
+            "Any deviation from a fashion-related choreography will lead to a deduction in score.",
+            "Any violation with respect to the campus rules could lead to disqualification.",
+            "Any sort of intoxication in the campus or the green room will lead to disqualification.",
+            "Judgement will be based on coordination, music, confidence, gesture, creativity, garments and accessories.",
+            "The decisions of the judges and organisers will be final.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/heritage_haute.avif`,
+          startTime: "2024-05-11 16:00",
+          // endTime: "2024-05-11 17:00",
+          facultyCoordinators: [
+            {
+              name: "Michael Johnson",
+              phone: "+1122334455",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Sahana",
+              phone: "9110259198",
+            },
+            {
+              name: "Anusha",
+              phone: "7259583371",
+            },
+            {
+              name: "Melisha Dsouza",
+              phone: "8217458056",
+            },
+          ],
+        },
+        "4": {
+          name: "Tech Titan Tussle (Robo War, 3lbs)",
+          description:
+            "Witness sparks fly and metal clash in the ultimate showdown of robotic combat",
+          prerequisites: [
+            "Participants must carry any valid ID for registration.",
+          ],
+          rules: [
+            "Team size: 3-6 members.",
+            "Compliance with organizers' directives is mandatory; violations lead to disqualification.",
+            "Judges' decisions are final.",
+            "Bot weight limit: 3lb and 8kg categories.",
+            "Only wireless bots allowed.",
+            "Various weapons allowed with exceptions and limitations.",
+            "Knock-out format for contests.",
+            "Safety inspection before the event; unsafe bots discarded.",
+            "Bot declared immobile if unable to exhibit linear motion of at least one inch within 10 seconds.",
+            "LEGO kits, readymade kits, etc., not permitted; readymade gear boxes allowed.",
+            "Organizers reserve the right to modify rules.",
+            "Strict enforcement of allocated time; no extensions.",
+            "Unsafe bots disqualified during the match.",
+            "Criteria for judging informed on event day.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/techtitan.avif`,
+          startTime: "2024-05-09 10:00",
+          endTime: "2024-05-11 12:00",
+          facultyCoordinators: [
+            {
+              name: "Michael Johnson",
+              phone: "+1122334455",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Arvin Seth",
+              phone: "9108366524",
+            },
+            {
+              name: "Delson Tellis",
+              phone: "8310990921",
+            },
+            {
+              name: "Shreyas",
+              phone: "7090265515",
+            },
+          ],
+        },
+        "50": {
+          name: "Tech Titan Tussle (Robo War, 8KG)",
+          description:
+            "Witness sparks fly and metal clash in the ultimate showdown of robotic combat",
+          prerequisites: [
+            "Participants must carry any valid ID for registration.",
+          ],
+          rules: [
+            "Team size: 3-6 members.",
+            "Compliance with organizers' directives is mandatory; violations lead to disqualification.",
+            "Judges' decisions are final.",
+            "Bot weight limit: 3lb and 8kg categories.",
+            "Only wireless bots allowed.",
+            "Various weapons allowed with exceptions and limitations.",
+            "Knock-out format for contests.",
+            "Safety inspection before the event; unsafe bots discarded.",
+            "Bot declared immobile if unable to exhibit linear motion of at least one inch within 10 seconds.",
+            "LEGO kits, readymade kits, etc., not permitted; readymade gear boxes allowed.",
+            "Organizers reserve the right to modify rules.",
+            "Strict enforcement of allocated time; no extensions.",
+            "Unsafe bots disqualified during the match.",
+            "Criteria for judging informed on event day.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/techtitan.avif`,
+          startTime: "2024-05-09 10:00",
+          endTime: "2024-05-11 12:00",
+          facultyCoordinators: [
+            {
+              name: "Michael Johnson",
+              phone: "+1122334455",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Arvin Seth",
+              phone: "9108366524",
+            },
+            {
+              name: "Delson Tellis",
+              phone: "8310990921",
+            },
+            {
+              name: "Shreyas",
+              phone: "7090265515",
+            },
+          ],
+        },
+        "6": {
+          name: "Sky Surge (RC Plane Extreme)",
+          description:
+            "Taking imagination on flight with cutting-edge innovation",
+          prerequisites: [
+            "Sky Surge (RC Plane Extreme) is an open-to-all event.",
+            "Teams can have a maximum of 4 members.",
+            "Teams must register through the official Tiara'24 website. Spot entries are not allowed.",
+            "Team members must possess a Tiara ID to participate.",
+            "Participants must design and fabricate an RC aircraft; readymade models are not allowed.",
+            "The same aircraft should be used in both rounds.",
+            "Use of 2.4 GHz radio is required for all competing aircraft.",
+            "Receivers installed in the aircraft must be in 'receiver mode only'.",
+            "Last date for abstract submission: April 30, 2024.",
+          ],
+          rules: [
+            "Teams must adhere to design constraints including T/W ratio, propeller diameter, and wingspan limitations.",
+            "Only electric motors are allowed; IC engines or other means of providing thrust are prohibited.",
+            "Use of gyroscopes (gyros) and programming assistance in receivers is prohibited.",
+            "Programming for any step of the mission is not allowed.",
+            "Use of FPV or any other support for flying is not allowed.",
+            "The competition will be conducted in 3 rounds, with final points being the sum of points earned in each round.",
+            "Teams will have 2 attempts in round 2 and 3, and the best of the scores will be considered from each round.",
+            "Metal propellers are not allowed.",
+            "Organizers will check all systems (servos, motors, etc.) for functionality before the competition.",
+            "In case of disputes/discrepancies, the organizers' decision will be final and binding.",
+            "Any changes in rules will be updated on the official Tiara'24 website and notified to registered teams.",
+            "For details about the competition rounds, please refer to the rulebook.",
+          ],
+          costs: 300,
+          thumbnail: `${tiaraAssetsPrefix}/mega/sky_surge.avif`,
+          startTime: "2024-05-09 10:00",
+          // endTime: "2024-05-12 16:00",
+          facultyCoordinators: [
+            {
+              name: "Michael Johnson",
+              phone: "+1122334455",
+            },
+          ],
+          studentCoordinators: [
+            {
+              name: "Oshin",
+              phone: "7349031558",
+            },
+            {
+              name: "Prajwal",
+              phone: "7019111734",
+            },
+            {
+              name: "Mayur",
+              phone: "9353832081",
+            },
+          ],
+        },
+      },
+    ],
+  },
+  all_events_day: {
     description: "9th April,2025.OAT, Jadavpur Campus.",
     thumbnail: `${tiaraAssetsPrefix}/mega/mega_thumbnail.avif`,
     events: [

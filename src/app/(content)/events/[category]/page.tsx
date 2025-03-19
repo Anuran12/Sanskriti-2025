@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation"; // Import usePathname from next/navigation
+import { usePathname, useRouter } from "next/navigation"; // Add useRouter import
 import { CardType } from "@/components/ui/hover/scroll";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
@@ -8,14 +8,17 @@ import { tiaraFont } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
 function toTitleCase(str: string) {
-  return str.replace(/\w\S*/g, function (txt) {
-    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-  });
+  return str
+    .toLowerCase()
+    .split(/[\s_]+/)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
 
 export default function EventsPage() {
   const [cards, setCards] = useState<CardType[]>([]);
   const pathname = usePathname();
+  const router = useRouter(); // Add router for navigation
 
   useEffect(() => {
     const path = pathname.split("/")[2];
@@ -35,7 +38,7 @@ export default function EventsPage() {
             tiaraFont.className
           )}
         >
-          {toTitleCase(pathname.split("/")[2]).split("_").join(" ")} Events
+          {toTitleCase(pathname.split("/")[2])} Events
         </div>
       </div>
       <div className="w-full flex justify-center ">
@@ -47,43 +50,53 @@ export default function EventsPage() {
                 return null;
               }
               return card.id !== "15" && card.id !== "14" ? (
-                <CardContainer
-                  key={index}
-                  containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
+                <div
+                  onClick={() => router.push(`${pathname}/${card.id}`)}
+                  className="cursor-pointer"
                 >
-                  <CardBody className="relative">
-                    <CardItem translateZ="100" className="w-full mt-4">
-                      <Image
-                        src={card.thumbnail}
-                        className="rounded-xl"
-                        alt="thumbnail"
-                        width={1200}
-                        height={800}
-                        priority
-                        sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                      />
-                    </CardItem>
-                  </CardBody>
-                </CardContainer>
+                  <CardContainer
+                    key={index}
+                    containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
+                  >
+                    <CardBody className="relative">
+                      <CardItem translateZ="100" className="w-full mt-4">
+                        <Image
+                          src={card.thumbnail}
+                          className="rounded-xl"
+                          alt="thumbnail"
+                          width={1200}
+                          height={800}
+                          priority
+                          sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                        />
+                      </CardItem>
+                    </CardBody>
+                  </CardContainer>
+                </div>
               ) : (
-                <CardContainer
-                  key={index}
-                  containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
+                <div
+                  onClick={() => router.push(`${pathname}/${card.id}`)}
+                  className="cursor-pointer"
                 >
-                  <CardBody className="relative">
-                    <CardItem translateZ="100" className="w-full mt-4">
-                      <Image
-                        src={card.thumbnail}
-                        className="rounded-xl"
-                        alt="thumbnail"
-                        width={1200}
-                        height={800}
-                        priority
-                        sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                      />
-                    </CardItem>
-                  </CardBody>
-                </CardContainer>
+                  <CardContainer
+                    key={index}
+                    containerClassName="relative flex items-center justify-center transition-all duration-200 ease-linear"
+                  >
+                    <CardBody className="relative">
+                      <CardItem translateZ="100" className="w-full mt-4">
+                        <Image
+                          src={card.thumbnail}
+                          className="rounded-xl"
+                          alt="thumbnail"
+                          width={1200}
+                          height={800}
+                          priority
+                          sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                        />
+                      </CardItem>
+                    </CardBody>
+                  </CardContainer>
+                </div>
               );
             })}
         </div>

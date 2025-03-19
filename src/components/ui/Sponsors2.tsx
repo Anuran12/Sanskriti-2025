@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn, tiaraAssetsPrefix } from "@/lib/utils";
 import { tiaraFont } from "@/lib/fonts";
 const Sponsors2 = () => {
   return (

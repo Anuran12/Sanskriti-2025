@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3 md:text-left text-zinc-200 CaptainFont  text-lg tracking-wider">
               <p>Biraj Barua : +91 7001642970</p>
               <p>Dipak Lo : +91 9064217175</p>
-              <p>Tamal Roychoudhury : +91 8918928140</p>
+              <p>Tamal Roy Chowdhury : +91 8918928140</p>
             </div>
           </div>
           <div>

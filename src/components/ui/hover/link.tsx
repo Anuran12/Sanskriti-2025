@@ -112,7 +112,7 @@ export const Link = ({ heading, image, subheading, href }: LinkProps) => {
               className={cn("inline-block tracking-wider", tiaraFont.className)}
               key={i}
             >
-              {l}
+              {l === " " ? "\u00A0" : l}
             </motion.span>
           ))}
         </motion.span>
