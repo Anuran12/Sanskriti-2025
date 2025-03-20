@@ -247,7 +247,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/cultural/sketchophile.avif`,
+          thumbnail: EVENT_POSTER_IMAGE,
           startTime: "2025-04-08 10:00:00",
           venue: "TEQIP BUILDING",
           formLink:
