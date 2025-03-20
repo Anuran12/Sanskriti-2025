@@ -20,14 +20,13 @@ export default function EventsPage() {
   return (
     <>
       <Container className="mx-auto pt-16">
-        <div className="py-4 mx-6 sm:mx-12 space-y-4 mt-10 pt-10">
-          <h1
-            id="about"
-            className={cn(
-              "text-center text-8xl text-[#F59E0B]",
-              tiaraFont.className
-            )}
-          >
+        <div
+          className={cn(
+            "text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl w-fit text-center duration-500",
+            tiaraFont.className
+          )}
+        >
+          <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F59E0B]">
             Timeline
           </h1>
         </div>
