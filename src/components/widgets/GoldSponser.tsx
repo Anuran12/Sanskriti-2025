@@ -44,6 +44,7 @@ export function Sponsers() {
                       width={1200}
                       height={800}
                       priority
+                      unoptimized={card.includes("githubusercontent.com")}
                       sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
                     />
                   </CardItem>

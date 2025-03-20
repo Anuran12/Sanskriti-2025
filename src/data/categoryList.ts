@@ -27,7 +27,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-06 12:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSeRpxEaiGsZ1trLG-wmUZdqAr5JHgEcZvGoJGS0NQM3R7wFDA/viewform",
@@ -61,7 +61,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-06 16:00:00",
           finalsStartTime: "2025-04-11 11:00:00",
           venue: "Jadavpur Campus, OAT",
@@ -108,7 +108,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-07 12:00:00",
           venue: "To be announced",
           formLink:
@@ -142,7 +142,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-07 14:00:00",
           venue: "Jadavpur Campus, OAT",
           formLink:
@@ -164,7 +164,7 @@ const categoriesList = {
             "THE DAYS ARE FINALLY HERE! The same O.A.T., the same lights, the same stage waiting to host your musical talents and a fresh surge of enthusiasm. Start training your chords, polishing your instruments, and get ready for SANSKRITI 2024 Students' Performances, which is just around the corner!",
           rules: [],
           prerequisites: [],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-07 18:00:00",
           venue: "To be announced",
           formLink:
@@ -212,7 +212,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-08 10:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLScAMMY7r4gMztWAE_hjaQTEYOwojP2U00M-iZbTUj9XNxzB1A/viewform",
@@ -277,7 +277,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach an hour prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-08 12:00:00",
           venue: "TEQIP BUILDING",
           formLink:
@@ -311,7 +311,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-08 14:30:00",
           venue: "Jadavpur Campus, OAT",
           formLink:
@@ -352,7 +352,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-09 15:30:00",
           venue: "To be announced",
           formLink:
@@ -383,7 +383,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-09 12:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSc72-3voe2bCmUlX00ZAxrHtTP9EtNcuM5e1KMtN6r8L4Ui5w/viewform",
@@ -415,7 +415,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-09 14:00:00",
           formLink: "https://forms.gle/YourSpecificEventFormLink", // Add the Google Form link here
           studentCoordinators: [
@@ -449,7 +449,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-09 17:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLScp6njXFwYccm7wQpAmjRClqvvcLIk3GX-ahWUSHNL81Lwgrw/viewform",
@@ -498,7 +498,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-06 16:00:00",
           finalsStartTime: "2025-04-11 11:00:00",
           venue: "Jadavpur Campus, OAT",
@@ -534,7 +534,7 @@ const categoriesList = {
             "Participants must reach 30 minutes prior to the event.",
           ],
           venue: "TEQIP BUILDING",
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-11 12:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSd7eiJowSGjrSa8Wk9pqlLvu-KVIQpzmHrkpdCmgsQ2CFyj0A/viewform",
@@ -573,7 +573,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${tiaraAssetsPrefix}/events/poster.png`,
+          thumbnail: `/events/poster.png`,
           startTime: "2025-04-12 11:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSeIQkEYuvGveh2zJYLeBvaF45PW5oDhEgeeySRBkjvG_ddukg/viewform",

@@ -170,6 +170,7 @@ export const ImageCard = ({
         src={image.src}
         height="600"
         width="600"
+        unoptimized={image.src.includes("githubusercontent.com")}
         className="object-cover object-left-top absolute h-full w-full inset-0"
         alt={image.alt}
       />

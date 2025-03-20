@@ -215,6 +215,9 @@ const Page = () => {
                   width={400}
                   height={400}
                   alt="image"
+                  unoptimized={eventInfo?.thumbnail?.includes(
+                    "githubusercontent.com"
+                  )}
                   className=" rounded-lg shadow-lg shadow-slate-500/50 mt-16 2xl:w-[620px] 2xl:h-[620px]"
                 />
                 <div className="text-center 2xl:text-2xl mt-8">
