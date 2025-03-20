@@ -25,23 +25,43 @@ export const HeroParallax = ({
   const secondRow = images.slice(5, 10);
   const thirdRow = images.slice(10, 15);
   const ref = React.useRef(null);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 200, damping: 30, bounce: 0 };
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
+    useTransform(
+      scrollYProgress,
+      [0, 1],
+      [isMobile ? -300 : -900, isMobile ? 300 : 900]
+    ),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(
+      scrollYProgress,
+      [0, 1],
+      [isMobile ? -300 : -900, isMobile ? -500 : -1200]
+    ),
     springConfig
   );
   const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+    useTransform(scrollYProgress, [0, 0.15], [isMobile ? 5 : 12, 0]),
     springConfig
   );
   const opacity = useSpring(
@@ -49,17 +69,21 @@ export const HeroParallax = ({
     springConfig
   );
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+    useTransform(scrollYProgress, [0, 0.15], [isMobile ? 8 : 15, 0]),
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(
+      scrollYProgress,
+      [0, 0.2],
+      [isMobile ? -220 : -600, isMobile ? 180 : 400]
+    ),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="-z-10 h-auto overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="-z-10 h-auto overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] w-full"
     >
       <Header />
       <motion.div
@@ -71,12 +95,12 @@ export const HeroParallax = ({
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row space-x-4 sm:space-x-10 md:space-x-20 mb-6 sm:mb-10 md:mb-20 overflow-visible w-screen -ml-[16px] sm:-ml-[24px] md:-ml-[32px] pl-0">
           {firstRow.map((image, index) => (
             <ImageCard image={image} translate={translateX} key={index} />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-20 space-x-20">
+        <motion.div className="flex flex-row mb-6 sm:mb-10 md:mb-20 space-x-4 sm:space-x-10 md:space-x-20 overflow-visible w-screen -ml-[16px] sm:-ml-[24px] md:-ml-[32px] pl-0">
           {secondRow.map((image, index) => (
             <ImageCard
               image={image}
@@ -85,7 +109,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 pb-[32rem]">
+        <motion.div className="flex flex-row space-x-4 sm:space-x-10 md:space-x-20 pb-[16rem] sm:pb-[24rem] md:pb-[32rem] lg:pb-[32rem] overflow-visible w-screen -ml-[16px] sm:-ml-[24px] md:-ml-[32px] pl-0">
           {thirdRow.map((image, index) => (
             <ImageCard image={image} translate={translateX} key={index} />
           ))}
@@ -164,14 +188,14 @@ export const ImageCard = ({
       whileHover={{
         y: -20,
       }}
-      className="h-96 w-[30rem] relative flex-shrink-0"
+      className="h-40 sm:h-80 md:h-96 w-[12rem] sm:w-[20rem] md:w-[30rem] relative flex-shrink-0 origin-left"
     >
       <Image
         src={image.src}
         height="600"
         width="600"
         unoptimized={image.src.includes("githubusercontent.com")}
-        className="object-cover object-left-top absolute h-full w-full inset-0"
+        className="object-cover object-center absolute h-full w-full inset-0 rounded-lg"
         alt={image.alt}
       />
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
