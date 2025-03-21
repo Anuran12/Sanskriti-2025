@@ -132,7 +132,7 @@ const categoriesList = {
             "Participants must reach 30 minutes prior to the event.",
           ],
           venue: "Jadavpur Campus, TEQIP",
-          thumbnail: "EVENT_POSTER_IMAGE",
+          thumbnail: EVENT_POSTER_IMAGE,
           startTime: "2025-03-06 12:00:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSdFwmj-3DMICnLVBfaiqmYthtWqAuxeozS8O2-0ocApgGmY5w/viewform",
@@ -444,7 +444,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach an hour prior to the event.",
           ],
-          thumbnail: "EVENT_POSTER_IMAGE",
+          thumbnail: EVENT_POSTER_IMAGE,
           startTime: "2025-04-08 12:00:00",
           venue: "TEQIP BUILDING",
           formLink:
@@ -737,7 +737,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: "EVENT_POSTER_IMAGE",
+          thumbnail: EVENT_POSTER_IMAGE,
           startTime: "2025-04-12 12:30:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSeQ8FPdEZ20zGh5kld-EibLjPe1tadMDBDBO7yqXr2LPZ5IJw/viewform",
