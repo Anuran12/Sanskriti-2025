@@ -81,6 +81,72 @@ const categoriesList = {
             },
           ],
         },
+        "2": {
+          name: "Raag 'N' Josh (Eastern Bands) Registration",
+          description:
+            "Showcase your musical prowess in this thrilling Eastern Bands competition, open to college and non-college bands alike!",
+          rules: [
+            "Registration for RAAG ‘N’ JOSH is open to any eastern band, college or otherwise.",
+            "This is an ON-STAGE competition.",
+            "Time limit during prelims is 10+2 minutes, inclusive of sound check.",
+            "8 bands will qualify to the finals.",
+            "Time limit during finals is 12+3 minutes, inclusive of sound check.",
+            "Marks will be deducted for exceeding the time limit.",
+            "Equipment provided: Drums, adequate microphones, plug-ins, and sufficient sound requirements.",
+            "Bands must bring their own musical instruments. Programmed music is not allowed.",
+            "In the finals, extra credit will be given for original compositions.",
+            "Each band must perform a minimum of two songs during the finals.",
+          ],
+          prerequisites: [
+            "Participants must reach 30 minutes prior to the event.",
+          ],
+          thumbnail: EVENT_POSTER_IMAGE,
+          startTime: "2025-04-06 10:00:00",
+          formLink:
+            "https://docs.google.com/forms/d/e/1FAIpQLScipbqcS67Uj4v0jJjPa6y7k8I9N6cAAmnKqXdj8EURXBISag/viewform",
+          studentCoordinators: [
+            {
+              name: "Dipesh Mahato",
+              phone: "7029014262",
+            },
+            {
+              name: "Sayani Lath Roy",
+              phone: "9064060188",
+            },
+          ],
+        },
+        "3": {
+          name: "THINK TWICE - Debate Competition Registration",
+          description:
+            "Engage in a battle of wits and words in this exciting debate competition! Only 10 teams can participate, so register fast!",
+          rules: [
+            "This is an OFF-STAGE event.",
+            "There will be only 10 teams for the event; registration is on a first-come, first-serve basis.",
+            "The team size is 2, with one member speaking for the topic and another against it.",
+            "The time allotted per speaker is 4 + 1 minutes.",
+            "Exceeding the time limit will result in a penalty.",
+            "The speaker who sets the motion first will be allowed to wrap up at the end of the debate.",
+            "Participants will not be allowed to read from any material but may carry plain papers to jot down points if required.",
+          ],
+          prerequisites: [
+            "Participants must reach 30 minutes prior to the event.",
+          ],
+          venue: "Jadavpur Campus, TEQIP",
+          thumbnail: "EVENT_POSTER_IMAGE",
+          startTime: "2025-03-06 12:00:00",
+          formLink:
+            "https://docs.google.com/forms/d/e/1FAIpQLSdFwmj-3DMICnLVBfaiqmYthtWqAuxeozS8O2-0ocApgGmY5w/viewform",
+          studentCoordinators: [
+            {
+              name: "Gourav Bose",
+              phone: "8017469943",
+            },
+            {
+              name: "Souvik",
+              phone: "7029273580",
+            },
+          ],
+        },
       },
     ],
   },
@@ -184,6 +250,40 @@ const categoriesList = {
             {
               name: "Dipesh Mahato",
               phone: "7029014262",
+            },
+          ],
+        },
+        "3": {
+          name: "TARANA - Eastern Solo Vocals Registrations",
+          description:
+            "Showcase your vocal talent in this prestigious Eastern solo singing competition! Open to individuals and teams from colleges or otherwise.",
+          rules: [
+            "This is an ON-STAGE event.",
+            "Registration for TARANA is open to any individual/team, college or otherwise.",
+            "One singer and one instrument (might be played by another person) is allowed.",
+            "Competitors are expected to bring their own instruments.",
+            "Backing tracks will not be allowed.",
+            "Time limit during prelims is 5+1 minutes, inclusive of sound check, or 2 songs, whichever is less.",
+            "8 individuals/teams will qualify to the finals.",
+            "Time limit during finals is 7+1 minutes, inclusive of sound check.",
+            "It is compulsory to sing two songs during the finals.",
+            "Marks will be deducted for exceeding the time limit.",
+          ],
+          prerequisites: [
+            "Participants must reach 30 minutes prior to the event.",
+          ],
+          thumbnail: EVENT_POSTER_IMAGE,
+          startTime: "2025-04-07 10:00:00",
+          formLink:
+            "https://docs.google.com/forms/d/e/1FAIpQLSfl5hYhaxWm1ll62qDbmIJJQ5AzdmPEWT1Q7eiMHyssfX74ng/viewform",
+          studentCoordinators: [
+            {
+              name: "Brohmani",
+              phone: "7501689409",
+            },
+            {
+              name: "Ankit",
+              phone: "9800068545",
             },
           ],
         },
@@ -327,6 +427,36 @@ const categoriesList = {
             {
               name: "Adrija Chatterjee",
               phone: "7439849303",
+            },
+          ],
+        },
+        "4": {
+          name: "RANGOLI Registrations",
+          description:
+            "Unleash your creativity with vibrant colors in this exciting Rangoli competition! Open to all teams ready to showcase their artistic flair.",
+          rules: [
+            "This is an OFF-STAGE competition.",
+            "Rangoli event teams should comprise of 2 members.",
+            "Contestants are expected to bring their own colors and brushes.",
+            "Contestants are expected to bring any material that they may need. No material will be supplied at the venue.",
+            "The topic will be given an hour before the competition.",
+          ],
+          prerequisites: [
+            "Participants must reach an hour prior to the event.",
+          ],
+          thumbnail: "EVENT_POSTER_IMAGE",
+          startTime: "2025-04-08 12:00:00",
+          venue: "TEQIP BUILDING",
+          formLink:
+            "https://docs.google.com/forms/d/e/1FAIpQLSed5WEB8nDFK7V4w6lzAKVR51eWDu2hUC4KsHUBrwpgYt86Cg/viewform",
+          studentCoordinators: [
+            {
+              name: "Dhruba Mahato",
+              phone: "8617615996",
+            },
+            {
+              name: "Manab Patowary",
+              phone: "9064792800",
             },
           ],
         },
@@ -588,6 +718,37 @@ const categoriesList = {
             {
               name: "Saikat",
               phone: "8509660368",
+            },
+          ],
+        },
+        "1": {
+          name: "INSTRUMENTAL Registration",
+          description:
+            "Showcase your musical talent in this thrilling instrumental solo competition! Open to all individual participants, college or otherwise.",
+          rules: [
+            "This is an instrumental solo competition.",
+            "Registration for INSTRUMENTAL is open to any individual, college or otherwise.",
+            "This is an ON-STAGE competition.",
+            "One participant with one set of instrument is allowed.",
+            "Competitors are expected to bring their own instrument.",
+            "Time limit is 5 minutes, inclusive of sound check.",
+            "Marks will be deducted for exceeding the time limit.",
+          ],
+          prerequisites: [
+            "Participants must reach 30 minutes prior to the event.",
+          ],
+          thumbnail: "EVENT_POSTER_IMAGE",
+          startTime: "2025-04-12 12:30:00",
+          formLink:
+            "https://docs.google.com/forms/d/e/1FAIpQLSeQ8FPdEZ20zGh5kld-EibLjPe1tadMDBDBO7yqXr2LPZ5IJw/viewform",
+          studentCoordinators: [
+            {
+              name: "Tiyasa",
+              phone: "9903898874",
+            },
+            {
+              name: "Manjina Bhattacharya",
+              phone: "7029936889",
             },
           ],
         },
