@@ -96,11 +96,6 @@ export default function RegisterPage() {
                       priority
                       unoptimized={typeof event.thumbnail === "string"}
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-50 rounded-xl flex flex-col items-center justify-center p-4">
-                      <h3 className="text-white text-xl font-bold text-center mb-2">
-                        {event.name}
-                      </h3>
-                    </div>
                   </CardItem>
                 </CardBody>
               </CardContainer>
