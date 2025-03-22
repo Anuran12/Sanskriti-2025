@@ -14,6 +14,7 @@ const GUITAR_WARS_IMAGE = "guitarwars.jpg";
 const INQUIZZITIVE_IMAGE = "inquizzitive.jpg";
 const INSTRUMENTAL_IMAGE = "instrumental.jpg";
 const JAMIT_IMAGE = "jamit.jpg";
+const MOON_WALK_IMAGE = "moonwalk.jpg";
 const NATYALAYA_IMAGE = "natyalaya.jpg";
 const POSTER_TSHIRT_FACEPAINTING_IMAGE = "postertshirtfacepainting.jpg";
 const RAAGNJOSH_IMAGE = "raagnjosh.jpg";
@@ -470,7 +471,7 @@ const categoriesList = {
           prerequisites: [
             "Participants must reach 30 minutes prior to the event.",
           ],
-          thumbnail: `${eventsImagesPath}${DANCEBOUT_IMAGE}`,
+          thumbnail: `${eventsImagesPath}${MOON_WALK_IMAGE}`,
           startTime: "2025-04-08 14:30:00",
           venue: "Jadavpur Campus, OAT",
           formLink:
