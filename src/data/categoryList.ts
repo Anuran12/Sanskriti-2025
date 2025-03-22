@@ -51,7 +51,7 @@ const categoriesList = {
             "This is a graffiti/wall-art competition.",
             "Each team can have a maximum of 5 members.",
             "A designated wall area will be provided.",
-            "Participants will have 7 days (31/03/2025 to 06/04/2025) to complete their graffiti.",
+            "Participants will have 7 days (06/04/2025 to 12/04/2025) to complete their graffiti.",
             "Teams must bring their own paints, brushes, and necessary materials.",
           ],
           prerequisites: [
