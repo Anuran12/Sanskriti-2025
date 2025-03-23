@@ -102,7 +102,7 @@ const Page = () => {
                         tiaraFont.className
                       )}
                     >
-                      th may to{" "}
+                      th april to{" "}
                     </span>
                   ) : (
                     ""
