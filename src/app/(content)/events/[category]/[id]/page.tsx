@@ -108,7 +108,7 @@ const Page = () => {
                     ""
                   )}
                   {""}
-                  {formatedEndDate.toString().toLowerCase()}th may{" "}
+                  {formatedEndDate.toString().toLowerCase()}th april{" "}
                   {formattedTime.toString().toLowerCase()}
                 </span>
               </div>
