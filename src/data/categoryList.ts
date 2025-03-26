@@ -609,7 +609,7 @@ const categoriesList = {
             "Participants must reach 30 minutes prior to the event.",
           ],
           thumbnail: `${eventsImagesPath}${INQUIZZITIVE_IMAGE}`,
-          startTime: "2025-04-09 12:00:00",
+          startTime: "2025-04-09 14:30:00",
           formLink:
             "https://docs.google.com/forms/d/e/1FAIpQLSc72-3voe2bCmUlX00ZAxrHtTP9EtNcuM5e1KMtN6r8L4Ui5w/viewform",
           studentCoordinators: [
