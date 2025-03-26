@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import * as Scrollytelling from "@bsmnt/scrollytelling";
+import Image from "next/image";
 
 import s from "./intro.module.scss";
 import { cn } from "@/lib/utils";
@@ -45,37 +46,40 @@ export const LabIntro = () => {
             : what is sanskriti ? :
           </h2>
         </Scrollytelling.Parallax>
-        <p className={s.subtitle}>
-          <svg
-            width="9"
-            height="153"
-            viewBox="0 0 9 153"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={s.arrowDown}
-          >
-            <path
-              d="M4.14645 152.354C4.34171 152.549 4.65829 152.549 4.85355 152.354L8.03553 149.172C8.2308 148.976 8.2308 148.66 8.03553 148.464C7.84027 148.269 7.52369 148.269 7.32843 148.464L4.5 151.293L1.67157 148.464C1.47631 148.269 1.15973 148.269 0.964466 148.464C0.769204 148.66 0.769204 148.976 0.964466 149.172L4.14645 152.354ZM5 152L4.99999 -2.18557e-08L3.99999 2.18557e-08L4 152L5 152Z"
-              fill="#EFEFEF"
+
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-16 mb-12 px-4">
+          <div className="flex-shrink-0">
+            <Image 
+              src="/sanskriti.png"
+              alt="Sanskriti Logo"
+              width={700}
+              height={700}
+              className="object-contain"
+              priority
             />
-          </svg>
-          Sanskriti is a celebration of hope. The very word &#40;origin
-          Sanskrit: Sanskaar&#41; contains a hint of mending, and reconstruction
-          and is a relentless effort towards upliftment and perfection. From its
-          mere facade, Sanskriti is a fest, a cultural festival but to us, the
-          students of Jadavpur University, Sanskriti is a guiding force, a path
-          we take in our attempt to redefine culture. It is an endeavor to break
-          down the shackles of defined cultural norms and to set new boundaries,
-          only to reinvent against those. Through its living heritage of 30
-          years, Sanskriti has given shape to ideas - new and bright and cradled
-          feelings of warmth and endearment. It has spread its wings to include
-          much more - a film festival &#40;Chhayanat&#41;, a tech fest
-          &#40;Srijan&#41;, and a freshers&#39; welcome U-Turn. As we strive
-          every year to bring light to the concept that Sanskriti embodies -
-          igniting the fire of life and hope into a morbid, stale state, we dig
-          up a world that existed only in imagination. Sanskriti is the literal
-          unfolding of the magic that life is.
-        </p>
+          </div>
+          
+          <div className="md:max-w-4xl">
+            <p className={cn("md:text-left text-center text-2xl leading-relaxed", tiaraFont.className)}>
+              Sanskriti is a celebration of hope. The very word &#40;origin
+              Sanskrit: Sanskaar&#41; contains a hint of mending, and reconstruction
+              and is a relentless effort towards upliftment and perfection. From its
+              mere facade, Sanskriti is a fest, a cultural festival but to us, the
+              students of Jadavpur University, Sanskriti is a guiding force, a path
+              we take in our attempt to redefine culture. It is an endeavor to break
+              down the shackles of defined cultural norms and to set new boundaries,
+              only to reinvent against those. Through its living heritage of 30
+              years, Sanskriti has given shape to ideas - new and bright and cradled
+              feelings of warmth and endearment. It has spread its wings to include
+              much more - a film festival &#40;Chhayanat&#41;, a tech fest
+              &#40;Srijan&#41;, and a freshers&#39; welcome U-Turn. As we strive
+              every year to bring light to the concept that Sanskriti embodies -
+              igniting the fire of life and hope into a morbid, stale state, we dig
+              up a world that existed only in imagination. Sanskriti is the literal
+              unfolding of the magic that life is.
+            </p>
+          </div>
+        </div>
 
         <div className={s.marquees}>
           <Marquee className={s.marquee1} orange />
