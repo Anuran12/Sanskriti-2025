@@ -478,7 +478,7 @@ const categoriesList = {
             "https://docs.google.com/forms/d/e/1FAIpQLSdES2KYqbG35a3hlpBHalDxzKAEX8fKRdag2gCWCJf4JpphuA/viewform",
           studentCoordinators: [
             {
-              name: "Saptorsho Basu",
+              name: "Saptaswa Basu",
               phone: "9804688606",
             },
             {
