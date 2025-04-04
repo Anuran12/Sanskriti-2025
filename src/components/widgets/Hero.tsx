@@ -165,7 +165,22 @@ export const Header = () => {
       >
         redefining culture...
       </motion.h2>
-      <ShiftingCountdown targetDate="04/05/2025" />
+      <motion.h2
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className={cn(
+          "mt-20 text-center text-4xl md:text-8xl ",
+          tiaraFont.className
+        )}
+      >
+        Unraveling...
+      </motion.h2>
+      {/* <ShiftingCountdown targetDate="04/05/2025" /> */}
     </>
   );
 };
