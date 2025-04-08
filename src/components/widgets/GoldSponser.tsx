@@ -8,12 +8,16 @@ const performances = [
   {
     date: "5/4/25",
     event: "Curtain Raiser",
-    performer: "Alchemy"
+    performer: "Alchemy",
+    image: "/performances/alchemy.jpeg",
+    isImageOnly: true
   },
   {
     date: "10/4/25",
     event: "Eastern Night",
-    performer: "Purbayan Chatterjee and Co."
+    performer: "Purbayan Chatterjee and Co.",
+    image: "/performances/purbayan.jpeg",
+    isImageOnly: true
   },
   {
     date: "11/4/24",
@@ -60,6 +64,26 @@ export function Sponsers() {
       <div className="w-full flex justify-center">
         <div className="p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-14">
           {performances.map((performance, index) => {
+            if (performance.isImageOnly) {
+              return (
+                <div key={index} className="flex flex-col items-center justify-center">
+                  <Image
+                    src={performance.image}
+                    alt={performance.performer}
+                    width={300}
+                    height={300}
+                    className="rounded-xl object-cover w-[300px] h-[300px]"
+                    priority
+                  />
+                  <div className="mt-4 text-center">
+                    <h2 className="text-xl font-bold text-white">{performance.date}</h2>
+                    <h3 className="text-lg text-[#F59E0B] font-semibold">{performance.event}</h3>
+                    <p className="text-xl text-white font-bold">{performance.performer}</p>
+                  </div>
+                </div>
+              );
+            }
+            
             return (
               <CardContainer
                 key={index}
