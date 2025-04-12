@@ -22,29 +22,26 @@ const performances = [
   {
     date: "11/4/24",
     event: "Western Night",
-    performer: "Girish and The Chronicles"
+    performer: "Girish and The Chronicles",
+    image: "/performances/catc.jpeg",
+    isImageOnly: true
   },
   {
     date: "12/4/25",
     event: "Reunion Night",
-    performer: "Agnee"
+    performer: "Agnee",
+    image: "/performances/agnee.jpeg",
+    isImageOnly: true
   },
   {
     date: "13/4/25",
     event: "Final Night",
-    performer: "Agam"
+    performer: "Agam",
+    image: "/performances/agam.jpeg",
+    isImageOnly: true
   }
 ];
 
-/* Original sponsers array - kept for future reference
-const sponsers = [
-  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
-  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
-  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
-  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
-  `${tiaraAssetsPrefix}/sponsers/ComingSoon.png`,
-];
-*/
 
 export function Sponsers() {
   return (
